@@ -3,18 +3,22 @@
 // Criando Variaveis
 // Numeros
 
-var n1 = 5;             // var, let e const
+var n1 = 5;             // var (geral), let (variavel variavel(k k k)) e const (variavel constante)
 const n2 = 7;
 
 var sum = n1 + n2;      // soma
 var subt = n1 - n2;     // subtração
 let mult = n1 * n2;     // multiplicação
 let div = n1 / n2;      // divisão
+let rest = n1 % n2;     // divisão porém pega o resto
+let elev = n1 ** n2;    // elevação
 
 //console.log(sum);
 //console.log(subt);
 //console.log(mult);
 //console.log(div);
+//console.log(rest);
+//console.log(elev);
 
 var conc = String(n1) + String(n2);     // Concatenação e transformação de number to string
 const divFloat = div.toFixed(2)         // Coloca 2 numeros depois da virgula
@@ -38,7 +42,8 @@ let myNumber = '23'
 //console.log(myName)
 //console.log(typeof(myNumber))             // Ira retornar uma string, mesmo sendo um numero
 //console.log(myName.length)                // Informa a quantidade de numero de letras
-//console.log(typeof(myName.length))        // É um number o typeof
+//console.log(typeof(myName.length))        // É um number, o typeof
+//console.log(typeof(Number(myNumber)))     // transforma string em number
 
 /*-------------------------------------------------------------------------------------------------------*/
 
@@ -118,6 +123,7 @@ var first                       // variavel Undefined
 /*
     == igualdade
     === estritamente igualdade (considerando até o typeof)
+    ! negação
     != diferente
     !== estritamente diferente
     < menor
