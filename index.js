@@ -156,7 +156,19 @@ if(a == b){                 // if é um 'se' que dentro encontra-se uma condiç�
 
 // Criando Operador ternario
 
+function ter(num) {
+    return (num == 0) ? 'Igual a zero'
+    : 'Não é igual a zero'
+}
 
+function opTer(num){
+    return (num < 0) ? 'Menor que zero'
+    : (num > 0) ? 'Maior que zero'
+    : 'Igual a zero';
+}
+
+//console.log(ter(0));
+//console.log(opTer(5));
 
 /*-------------------------------------------------------------------------------------------------------*/
 
@@ -202,5 +214,4 @@ function randomRange(myMin, myMax) {    // já que os random começa com zero, p
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
-
 
