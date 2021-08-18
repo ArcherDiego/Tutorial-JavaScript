@@ -44,6 +44,7 @@ let myNumber = '23'
 //console.log(myName.length)                // Informa a quantidade de numero de letras
 //console.log(typeof(myName.length))        // É um number, o typeof
 //console.log(typeof(Number(myNumber)))     // transforma string em number
+//console.log(parseInt(myNumber, 10))       // utilizando radix (base numerica) para transformar em number
 
 /*-------------------------------------------------------------------------------------------------------*/
 
@@ -101,13 +102,17 @@ let obj = [
 // Encontrando especificamente um objeto
 
 let firstName = obj[0].firstName    // Pega o valor(value) da propriedade(key) especificada do objeto
+obj.add = 'novo elemento'           // Adição de elementos ao objeto
+delete obj.add                      // Deleta um elemento do objeto
+
 //console.log(firstName)
+//console.log(obj)
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-// Função
+// Criando Função
 function firstFunction(){
-    var first = '1º'
+    var first = '1º'            // variaveis dentro da função só serve para a mesma
     return first
 }
 var first                       // variavel Undefined
@@ -117,7 +122,7 @@ var first                       // variavel Undefined
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-// IF e ELSE
+// Criando IF e ELSE
 // Tabela com alguns elementos unicos do IF
 
 /*
@@ -133,7 +138,6 @@ var first                       // variavel Undefined
     && sinal de 'E'
     || sinal de 'OU'
 */
-
 /*
 let a = 1;
 let b = 3;
@@ -150,6 +154,53 @@ if(a == b){                 // if é um 'se' que dentro encontra-se uma condiç�
 }
 */
 
+// Criando Operador ternario
+
+
+
 /*-------------------------------------------------------------------------------------------------------*/
 
-// Loops
+// Criando Loops
+// while
+/*
+while(true){                // Criando um loop infinito (não crie um e use console.log)
+    var n3 = 0;             // o loop só vai existir se a condição for verdadeira
+    n3++;
+}
+*/
+
+// do while
+/*
+do{                         // o código vai repitir pelo menos uma vez antes de verificar a
+    let x = 0;              // condição do while lá embaixo, (no caso ele só vai repitir uma vez)
+    x++;
+    let arr4 = []
+    arr4.push(x)
+    console.log(arr4)
+}while(false)
+*/
+
+// for
+/*
+let arr3 = [0];
+for (let i = 1; i <= 10; i++) {     // faz um loop para armazenar em um array os numeros de 1 a 10
+    arr3.push(i)                    // (o 0 já esta dentro do array)
+}
+console.log(arr3)
+*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+// Criando um numero randomico
+
+Math.random(20)                         // randomiza um número, entre parenteses está o gap do random
+Math.floor(Math.random(20))             // arredonda o número randomizado
+
+function randomRange(myMin, myMax) {    // já que os random começa com zero, podemos alterar essa logica
+
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
