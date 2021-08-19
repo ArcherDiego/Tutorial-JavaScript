@@ -3,7 +3,7 @@
 // Criando Variaveis
 // Numeros
 
-var n1 = 5;             // var (geral), let (variavel variavel(k k k)) e const (variavel constante)
+var n1 = 5;             // var (geral, global), let (geral, local) e const (variavel, imutavél)
 const n2 = 7;
 
 var sum = n1 + n2;      // soma
