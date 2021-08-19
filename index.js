@@ -1,4 +1,4 @@
-// Basic JavaScript
+/* ------------------------------------- Basic JavaScript e EMCAS6 -------------------------------------*/
 
 // Criando Variaveis
 // Numeros
@@ -215,3 +215,27 @@ function randomRange(myMin, myMax) {    // já que os random começa com zero, p
 
 /*-------------------------------------------------------------------------------------------------------*/
 
+/* ------------------------------------------------- DOM -------------------------------------------------*/
+
+//Pop-ups iniciais
+
+//window.alert('Isso é um alerta')                                //janela de alerta, onde só existe o OK
+//window.confirm('Isso é uma pergunta com resposta boleana')      //janela de confirmação, onde há duas opções
+//window.prompt('Isso é uma pergunta com caixa de texto')         //janela com text para digitar
+
+// Pegando elementos e guardando em variaveis
+
+var main = window.document.getElementById('main')               // Pegando o elemento por ID
+let lorem = document.getElementsByTagName('p')[0]               // Pegando o elemento por TAG
+var img = document.getElementsByName('img')[0]                  // Pegando o elemento por NAME
+let title = document.getElementsByClassName('title')[0]         // Pegando o elemento por CLASS
+var body = document.querySelector('body')                       // Pegando o seletor do elemento por QUERY
+
+/* ( Pode-se ocutar o window na hora de chamar o elemento, elementos no plural precisam ser especificados) */
+// Chamando as variaveis e trocando seus respectivos CSS
+
+main.style.backgroundColor = 'black'        // Alterando a cor do fundo
+lorem.style.color = 'white'                 // Alterando a cor da letra
+title.style.color = 'green'                 // Alterando a cor da letra
+img.style.borderRadius = '100%'             // Colocando borda na imagem
+body.style.backgroundColor = 'purple'       // Alterando a cor do fundo
