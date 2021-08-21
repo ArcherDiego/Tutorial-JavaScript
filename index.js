@@ -213,7 +213,36 @@ function randomRange(myMin, myMax) {    // já que os random começa com zero, p
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 }
 
-/*-------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------ES6-------------------------------------------------*/
+
+// Criando função com seta (arrow)
+
+const myFunc = () => "value";               // função com resoluções simples
+const myConcat = (arr1, arr2) => {          // função com parametros, os parametros podem ter valor padrão
+    return arr1.concat(arr2);                      
+}                      
+
+//console.log(myFunc)
+//console.log(myConcat([1, 2], [3, 4, 5]));
+
+// Criando função com operador spread
+
+const sum2 = (...args) => {                     // Pega todos os parametros que entrão na função
+    return args.reduce((a, b) => a + b, 0);     // Reduce() = afunila até existir um unico resultado
+}
+
+//console.log(sum2(1,2,3,4,5,6))
+
+// Simplificando criação de variaveis que já existem dentro de um objeto
+
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+};
+
+//const { today, tomorrow } = HIGH_TEMPERATURES;      // Criando duas variaveis com os resultados do obj
+//const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES; // Também dá pra criar com outros nomes
 
 /* ------------------------------------------------- DOM -------------------------------------------------*/
 
