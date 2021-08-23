@@ -320,7 +320,9 @@ function outImg(){
 let now = new Date();
 let hrs = now.getHours();
 let minute = now.getMinutes();
+let days = now.getDay();
 
 //console.log(hrs);
 //console.log(minute);                                // Uso do $ (sifrão) para escrever a variavel,
 //console.log(`Agora são ${hrs}:${minute}.`)          // apenas executado com `` (crase)
+//console.log(days);
