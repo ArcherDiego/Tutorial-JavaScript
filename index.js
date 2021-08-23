@@ -326,3 +326,5 @@ let days = now.getDay();
 //console.log(minute);                                // Uso do $ (sifrão) para escrever a variavel,
 //console.log(`Agora são ${hrs}:${minute}.`)          // apenas executado com `` (crase)
 //console.log(days);
+
+/* -------------------------------------------------------------------------------------------------------*/
