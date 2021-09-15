@@ -271,6 +271,48 @@ const HIGH_TEMPERATURES = {
 //const { today, tomorrow } = HIGH_TEMPERATURES;      // Criando duas variaveis com os resultados do obj
 //const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES; // Também dá pra criar com outros nomes
 
+// Criando Strings usando template literal
+
+const TEMPLATE = {                              // Criando um objeto 
+    firstName: ['Junko', 'Makoto', 'Nagito'],
+    lastName: ['Enoshima', 'Naegi', 'Komaeda'],
+    colegial: ['Despair', 'Hope', 'Luck']
+}
+const DESPAIR = [`<li class="text-warning">${TEMPLATE.colegial[0]}</li>`]   // Usando ` e ${} para chamar variavel especifica do objeto
+
+//console.log(DESPAIR)
+
+// import & export
+
+//export { TEMPLATE, DESPAIR }                    // Exporta as variaveis selecionadas
+
+//import { TEMPLATE, DESPAIR } from 'index.js'    // Só exporta o objeto selecionado
+//import * as TEMPLATE from 'index.js'            // Importa tudo do que foi selecionado
+
+/*
+export default function(x, y){                  // Exporta a função, não podendo usar let, const e var
+    return x + y
+}
+*/
+
+// Promise (só a promessa)
+
+const myPromise = new Promise((resolve, reject) => {        // Criando a promise
+    let responseFromServer = false;
+    if(responseFromServer) {                                // Colocando um comparativo
+        resolve("Cumpriu");
+    } else {  
+        reject("Não Cumpriu");
+    }
+});
+
+myPromise.then(result => {              // Então
+    console.log(result);
+});
+
+myPromise.catch(error => {              // Pegar
+    console.log(error);
+});
 /* ------------------------------------------------- DOM -------------------------------------------------*/
 
 //Pop-ups iniciais
@@ -327,4 +369,4 @@ let days = now.getDay();
 //console.log(`Agora são ${hrs}:${minute}.`)          // apenas executado com `` (crase)
 //console.log(days);
 
-/* -------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------*/
