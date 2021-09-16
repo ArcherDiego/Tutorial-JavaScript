@@ -297,6 +297,7 @@ export default function(x, y){                  // Exporta a função, não pode
 
 // Promise (só a promessa)
 
+/*
 const myPromise = new Promise((resolve, reject) => {        // Criando a promise
     let responseFromServer = false;
     if(responseFromServer) {                                // Colocando um comparativo
@@ -313,6 +314,8 @@ myPromise.then(result => {              // Então
 myPromise.catch(error => {              // Pegar
     console.log(error);
 });
+*/
+
 /* ------------------------------------------------- DOM -------------------------------------------------*/
 
 //Pop-ups iniciais
@@ -369,4 +372,20 @@ let days = now.getDay();
 //console.log(`Agora são ${hrs}:${minute}.`)          // apenas executado com `` (crase)
 //console.log(days);
 
-/* --------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------- Regular Expressions ----------------------------------------------*/
+
+// Regex                testando se há string digitada dentro de outra frase (string)
+// .test()
+
+let testando = 'Isso é uma frase teste.'
+let teste = /frase/
+let resultadoTeste = teste.test(testando)
+
+//console.log(resultadoTeste)
+
+// .match()
+
+let testando2 = 'Isso é outra frase.'
+let resultadoTeste2 = testando2.match(/outra/)
+
+//console.log(resultadoTeste2)
