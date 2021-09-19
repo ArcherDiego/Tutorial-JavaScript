@@ -377,9 +377,9 @@ let days = now.getDay();
 // Regex                testando se há string digitada dentro de outra frase (string)
 // .test()
 
-let testando = 'Isso é uma frase teste.'
+let testando = 'Isso é uma frase teste.'        // frase
 let teste = /frase/
-let resultadoTeste = teste.test(testando)
+let resultadoTeste = teste.test(testando)       // a palavra /frase/ está verificada, para ver se consta na str
 
 //console.log(resultadoTeste)
 
